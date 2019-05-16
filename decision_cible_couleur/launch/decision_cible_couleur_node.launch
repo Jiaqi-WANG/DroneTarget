@@ -1,0 +1,9 @@
+<launch> 
+	<arg name="namespace" default="decision_cible"/>
+	<group ns="$(arg namespace)">
+		<node pkg="decision_cible_couleur" type="decision_cible_couleur" name="decision_cible_couleur"> 
+		</node> 
+	</group>
+	<include file="$(find detection_rouge)/launch/detection_rouge_node.launch"/>
+</launch>
+	

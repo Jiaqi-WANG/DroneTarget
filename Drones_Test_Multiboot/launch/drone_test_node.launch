@@ -1,0 +1,6 @@
+<launch> 
+	<arg name="namespace" default="bebop"/>
+	<node pkg="drone_test" type="drone_test_main_controller" name="drone_test"> </node> 
+	<include file="$(find bebop_driver)/launch/bebop_node.launch"/>
+</launch>
+

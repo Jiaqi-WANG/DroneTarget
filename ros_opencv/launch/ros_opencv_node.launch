@@ -1,0 +1,9 @@
+<launch> 
+	<arg name="namespace" default="rosOpenCV"/>
+	<group ns="$(arg namespace)">
+		<node pkg="ros_opencv" type="ros_opencv" name="ros_opencv" output="screen"> 
+		</node> 
+	</group>
+
+</launch>
+

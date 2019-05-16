@@ -1,0 +1,9 @@
+<launch> 
+	<arg name="namespace" default="decision_cible"/>
+	<group ns="$(arg namespace)">
+		<node pkg="decision_cible" type="decision_cible" name="decision_cible"> 
+		</node> 
+	</group>
+	<include file="$(find detection_personne)/launch/detection_personne_node.launch"/>
+</launch>
+	

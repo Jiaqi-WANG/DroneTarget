@@ -1,0 +1,10 @@
+<launch> 
+	<arg name="namespace" default="detection_rouge"/>
+	<group ns="$(arg namespace)">
+		<node pkg="detection_rouge" type="detection_rouge_scanred" name="detection_rouge"> 
+		</node> 
+	</group>
+	<include file="$(find ros_opencv)/launch/ros_opencv_node.launch"/>
+	<include file="$(find drone_test)/launch/drone_test_node.launch"/>
+</launch>
+

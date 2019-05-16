@@ -1,0 +1,10 @@
+<launch> 
+	<arg name="namespace" default="detection_personne"/>
+	<group ns="$(arg namespace)">
+		<node pkg="detection_personne" type="detection_personne_scanhumain" name="detection_humain"> 
+		</node> 
+	</group>
+	<include file="$(find ros_opencv)/launch/ros_opencv_node.launch"/>
+	<include file="$(find drone_test)/launch/drone_test_node.launch"/>
+</launch>
+

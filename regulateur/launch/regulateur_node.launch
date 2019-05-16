@@ -1,0 +1,9 @@
+<launch> 
+	<arg name="namespace" default="regulateur"/>
+	<group ns="$(arg namespace)">
+		<node pkg="regulateur" type="regulateur_pid" name="regulateur"> 
+		</node> 
+	</group>
+	<include file="$(find decision_cible)/launch/decision_cible_node.launch"/>
+</launch>
+
