@@ -1,5 +1,10 @@
 <<<<<<< HEAD
 # DroneTarget
+
+Ubuntu 14.04, ROS Indigo, OpenCV 2.4.13.6
+
+catkin_make
+roslaunch regulateur regulateur_node.launch
 =======
 # bebop_autonomy
 
